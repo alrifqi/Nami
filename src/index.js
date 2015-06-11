@@ -29,7 +29,6 @@ var namiConfig = {
     username: process.argv[4],
     secret: process.argv[5]
 };
-
 var nami = new namiLib.Nami(namiConfig);
 process.on('SIGINT', function () {
     nami.close();
